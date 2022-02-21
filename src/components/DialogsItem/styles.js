@@ -20,6 +20,7 @@ export const MessageInfo = styled.div`
 	padding-left: 10px;
 	text-overflow: ellipsis;
     margin-bottom: auto;
+    user-select: none;
 `;
 export const UserName = styled.div`
 	text-transform: capitalize;
