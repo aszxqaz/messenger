@@ -1,0 +1,20 @@
+[
+    {
+        "lastMessageId": "kmlmnwerewom",
+        "lastMessageAuthorAvatarSrc": "bear.jpeg",
+		"lastMessageAuthorFullname": "Big Bear",
+		"lastMessageText": "Hello, I'm Bear"
+    },
+    {
+        "lastMessageId": "dkmmowekrofmds",
+        "lastMessageAuthorAvatarSrc": "wolf.jpg",
+		"lastMessageAuthorFullname": "Kind Wolf",
+		"lastMessageText": "Yo, I'm Wolf"
+    },
+    {
+        "lastMessageId": "sdfsdfsdf",
+        "lastMessageAuthorAvatarSrc": "rabbit.jpg",
+		"lastMessageAuthorFullname": "Little Rabbit",
+		"lastMessageText": "Hi all, I'm a little rabbit"
+    }
+]
