@@ -23,11 +23,11 @@ export const MessageInfo = styled.div`
 `;
 export const UserName = styled.div`
 	text-transform: capitalize;
-	font-size: 2.2rem;
+	font-size: 1rem;
     font-weight: bold;
 `;
 export const LastMessage = styled.div`
-	font-size: 2rem;
+	font-size: 1rem;
 	color: gray;
 	text-overflow: ellipsis;
 	overflow: hidden;
