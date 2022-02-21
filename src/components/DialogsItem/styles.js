@@ -25,6 +25,7 @@ export const UserName = styled.div`
 	text-transform: capitalize;
 	font-size: 1rem;
     font-weight: bold;
+    padding-bottom: 0.4rem;
 `;
 export const LastMessage = styled.div`
 	font-size: 1rem;
