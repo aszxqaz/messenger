@@ -1,28 +1,23 @@
-import { Avatar, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material';
+import { Container, Image, LastMessage, MessageInfo, UserImage, UserName } from "./styles";
 
-export default function DialogsItem({ fullname, messageText, avatarSrc }) {
+export default function DialogsItem({ children, ...restProps }) {
+	return <Container {...restProps}>{children}</Container>;
+}
+
+DialogsItem.UserImage = function ({ children, ...restProps }) {
 	return (
-		<ListItem alignItems="flex-start" sx={{ width: '100%' }}>
-			<ListItemAvatar>
-				<Avatar alt={fullname} src={avatarSrc} sx={{ width: 100, height: 100 }} />
-			</ListItemAvatar>
-			<ListItemText
-				primary={
-					<Typography
-						sx={{ display: 'block', fontSize: '1.25rem', fontWeight: 'bold' }}
-						color="text.primary">
-						{fullname}
-					</Typography>
-				}
-				secondary={
-					<Typography
-						sx={{ display: 'block', fontSize: '1.15rem' }}
-						color="text.primary">
-						{messageText}
-					</Typography>
-				}
-				sx={{ padding: '5px 15px' }}
-			/>
-		</ListItem>
+		<UserImage>
+			<Image {...restProps} />
+		</UserImage>
 	);
+};
+
+DialogsItem.MessageInfo = function ({ children, ...restProps }) {
+	const {username, lastMessage} = restProps
+	return (
+		<MessageInfo>
+			<UserName>{username}</UserName>
+			<LastMessage>{lastMessage}</LastMessage>
+		</MessageInfo>
+	)
 }
