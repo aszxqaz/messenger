@@ -1,7 +1,7 @@
 import { Divider, List } from '@mui/material';
 import DialogsItem from '../DialogsItem/DialogsItem';
 
-const getAvatarSrcString = (avatarSrc) => {
+export const getAvatarSrcString = (avatarSrc) => {
 	return `/static/images/avatar/${avatarSrc}`;
 };
 

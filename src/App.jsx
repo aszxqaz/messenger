@@ -1,14 +1,13 @@
-import { ThemeProvider } from '@mui/material';
-import DialogsItemContainer from './containers/dialogsItem';
+import Chat from './Chat';
+import ChatBoxContainer from './containers/chatBox';
 import GlobalStyles from './GlobalStyles';
-import Home from './Home';
-import theme from './theme';
+import ChatPage from './pages/Chat';
 
 function App() {
 	return (
 		<>
 			<GlobalStyles />
-			<DialogsItemContainer
+			{/* <DialogsItemContainer
 				avatarSrc={
 					'https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg'
 				}
@@ -28,7 +27,11 @@ function App() {
 				}
 				lastMessage={"I am writing right now to you. How are you?"}
 				username={'Peter Jackson'}
-			/>
+			/> */}
+			<ChatPage dialogsPartner={{
+				avatarSrc: "wolf.jpg",
+				fullname: "Maxim Butenko"
+			}} />
 		</>
 	);
 }
